@@ -1,0 +1,18 @@
+[package]
+name = "ogmo"
+description = "Serde definitions for Ogmo level editor files"
+license = "Apache-2.0"
+version = "0.1.0"
+authors = ["Brian West <brian@bwest.me>"]
+edition = "2018"
+homepage = "https://github.com/BrianMWest/ogmo-rs.git"
+repository = "https://github.com/BrianMWest/ogmo-rs.git"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = ">0.7"
+serde_derive = ">0.7"
+
+[dev-dependencies]
+serde_json = "^1"

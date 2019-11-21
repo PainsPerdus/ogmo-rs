@@ -1,0 +1,12 @@
+{
+  "name": "room_boundaries",
+  "_eid": "93451499",
+  "offsetX": 0,
+  "offsetY": 0,
+  "gridCellWidth": 1280,
+  "gridCellHeight": 720,
+  "gridCellsX": 1,
+  "gridCellsY": 2,
+  "grid2D": [["1", "0"]],
+  "arrayMode": 1
+}

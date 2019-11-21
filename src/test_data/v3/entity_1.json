@@ -1,0 +1,15 @@
+{
+  "name": "butterfly",
+  "id": 6,
+  "_eid": "04337206",
+  "x": 1216,
+  "y": 800,
+  "originX": 16,
+  "originY": 16,
+  "rotation": 0,
+  "values": {
+    "transition_mode_time": "1",
+    "fire_mode_time": "3",
+    "fire_spacing": "0.1"
+  }
+}
