@@ -146,6 +146,13 @@ pub struct Entity {
     pub origin_x: Option<i32>,
     #[serde(alias = "originY")]
     pub origin_y: Option<i32>,
+    pub nodes: Option<Vec<Position>>,
     pub rotation: Option<f32>,
     pub values: Option<BTreeMap<String, String>>,
+}
+
+#[derive(Deserialize)]
+pub struct Position {
+    pub x: i32,
+    pub y: i32,
 }
