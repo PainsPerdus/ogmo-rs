@@ -1,5 +1,7 @@
 use std::collections::BTreeMap;
 
+use serde_json::Value;
+
 #[derive(Deserialize)]
 pub struct Level {
     pub width: i32,
@@ -9,7 +11,7 @@ pub struct Level {
     #[serde(alias = "offsetY")]
     pub offset_y: Option<i32>,
     pub layers: Vec<Layer>,
-    pub values: BTreeMap<String, String>,
+    pub values: BTreeMap<String, Value>,
 }
 
 #[derive(Deserialize)]
@@ -148,7 +150,7 @@ pub struct Entity {
     pub origin_y: Option<i32>,
     pub nodes: Option<Vec<Position>>,
     pub rotation: Option<f32>,
-    pub values: Option<BTreeMap<String, String>>,
+    pub values: Option<BTreeMap<String, Value>>,
 }
 
 #[derive(Deserialize)]
