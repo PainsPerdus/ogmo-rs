@@ -135,7 +135,7 @@ pub enum TileLayer {
 #[derive(Debug, Deserialize, PartialEq)]
 #[serde(untagged)]
 pub enum TileDef {
-    Dim1([i32; 1]),
+    Dim1(i32),
     Dim2([i32; 2]),
 }
 
