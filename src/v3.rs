@@ -105,8 +105,8 @@ pub enum TileLayer {
         grid_cells_y: i32,
 
         tileset: String,
-        #[serde(alias = "dataCoords")]
-        data_coords: Vec<TileDef>,
+        #[serde(alias = "data")]
+        data: Vec<TileDef>,
     },
     Dim2 {
         name: String,
@@ -126,6 +126,7 @@ pub enum TileLayer {
         grid_cells_y: i32,
 
         tileset: String,
+        // XXX: this is probably broken but I don't need it.
         #[serde(rename = "dataCoords2D")]
         data_coords_2d: Vec<Vec<TileDef>>,
     },
